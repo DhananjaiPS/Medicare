@@ -12,7 +12,7 @@ header {
 
 .navbar {
     background-color: #003ecb;
-    color: antiquewhite;
+    color:#F7F3E8;
 }
 
 .contactbar {
@@ -84,6 +84,7 @@ header {
     align-items: center;
     height: 90px;
     background-color: antiquewhite;
+    border: none;
 }
 
 .panel-logo {
@@ -93,7 +94,8 @@ header {
     /* border: 2px solid black; */
 
 }
-.logo-text{
+
+.logo-text {
     border: none;
     font-size: 1.9rem;
     font-weight: 700;
@@ -102,34 +104,37 @@ header {
 }
 
 .logo {
-    font-size:5rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     border: none;
     color: #003ecb;
 }
-.blue{
+
+.blue {
     color: #003ecb;
 
 }
-.panel-menu{
+
+.panel-menu {
     font-size: 1.4rem;
     font-weight: 599;
-    border:none;
+    border: none;
 
 
 }
 
-.panel-search{
+.panel-search {
     font-size: 1.7rem;
-    border:none;
+    border: none;
     font-weight: 700;
 
 }
-.btn{
-    border:none;
-    border-top-right-radius:17px ;
+
+.btn {
+    border: none;
+    border-top-right-radius: 17px;
     border-bottom-left-radius: 17px;
     font-size: 1.4rem;
     background-color: #003ecb;
@@ -138,8 +143,9 @@ header {
 
 
 }
-.hero-section{
-    /* background-image: url(hero-image.jpg); */
+
+.hero-section {
+    background-image: url(hero-image.jpg);
     /* background-color: #003ecb; */
     width: 100%;
     height: 660px;
@@ -148,13 +154,39 @@ header {
     align-items: center;
     flex-direction: column;
     color: white;
-    background: linear-gradient(0deg, rgb(333), rgb(888)), url(hero-image.jpg);
-    
-}
-h3{
-    font-size: 1.8rem
+
 
 }
-.sub-hero-section{
-    font-size:1rem ;
+
+h3 {
+    font-size: 2.8rem;
+    margin-bottom: 33px;
+    font-weight: 700;
+
+
+}
+
+.sub-hero-section {
+    margin-top: 13px;
+    font-size: 1.6rem;
+    color: #0b0b0b;
+    font-weight: 700;
+}
+.hero-btn{
+    margin-top: 63px;
+    color: #003ecb;
+    border: none;
+    font-size: 22px;
+    padding: 16px 38px;
+    border-radius: 34px;
+}
+.panel2{
+    height: 700px;
+    background-color: #F7F3E8;
+}
+.panel2-img{
+
+}
+.panel2-text{
+    
 }
