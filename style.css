@@ -8,7 +8,7 @@
 header {
 
     color: black;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -384,7 +384,7 @@ h3 {
 
 .health-dep {
     height: 680px;
-    
+
 }
 
 .PDS-video {
@@ -400,16 +400,16 @@ h3 {
     margin-top: 0px;
     height: 600px;
     background: url(login-bg1.jpg);
-    background-size:cover;
+    background-size: cover;
     width: 100%;
     background-position: center;
-      
+
 }
 
 .appoinment-wrapper {
     position: relative;
-    width: 400px;
-    height: 550px;
+    width: 450px;
+    height: 480px;
     margin-top: 23px;
     background: transparent;
     border: 2px solid rgba(225, 255, 255, .5);
@@ -421,19 +421,22 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    /* overflow: none; */
+    /* /* height: 480px; */
     transition: height .2s ease;
-    padding: 23px 23px;
+    /* overflow: hidden; */ */
+    
 }
-.appoinment-wrapper.active{
+
+.appoinment.active {
     height: 520px;
 }
-/* form{
-    width: 378px;
-    right: -234px;
-    text-align: center;
-    position: relative;
-} */
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .appoinment-wrapper .icon-close {
     position: absolute;
     top: 0;
@@ -447,23 +450,26 @@ h3 {
     align-items: center;
     color: #fff;
     border-top-right-radius: 20px;
-    border-bottom-left-radius:20px ;
+    border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
 }
- /* .appoinment-wrapper .form-box.login{ 
+
+/* .appoinment-wrapper .form-box.login{ 
     display: none;
 }  */
-.appoinment-wrapper .form-box.register{
+.appoinment-wrapper .form-box.register {
     display: absolute;
-    transform: translateX(400px);
-    
+    transform: translateX(-50px);
+
 }
+
 .form-box {
     width: 100%;
     padding: 40px;
 }
-.form-box.login form{
+
+.form-box.login form {
     width: 341px;
     height: 310px;
     padding-right: 5px;
@@ -486,10 +492,13 @@ h3 {
 }
 
 .form-box h2 {
-    font-size: 2rem;
+    ont-size: 2rem;
     color: #040db8;
     text-align: center;
-
+    padding: 0 9px;
+    margin: 0 125px;
+    position: fixed;
+    top: 35px;
 }
 
 .input-box {
@@ -546,7 +555,9 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
-
+.remember-forget a{
+    margin-left: 96px;
+}
 .remember-forget label input {
     accent-color: #040db8;
     margin: 3px;
@@ -633,19 +644,21 @@ h3 {
 
 
 
-footer{
+footer {
     margin-top: 15px;
 }
-.foot-panel1{
+
+.foot-panel1 {
     background-color: #134bce;
     color: white;
-    height:49px ;
+    height: 49px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 0.8rem;
 }
-.foot-panel2{
+
+.foot-panel2 {
     display: flex;
     background-color: #3384da;
     background: url(footer-bg1.jpg);
@@ -653,50 +666,54 @@ footer{
     backface-visibility: visible;
     background-position: center;
     color: rgb(255, 254, 254);
-    height:400px;
+    height: 400px;
     padding-top: 10px;
     justify-content: space-evenly;
     margin-top: 20px;
     font-size: 1.6rem;
 }
-.foot-panel2 ul{
+
+.foot-panel2 ul {
     margin-top: 28px;
 }
-ul a{
-   
+
+ul a {
+
     display: block;
     margin-top: 15px;
     font-size: 0.85rem;
     color: #0f0f0f;
 }
-.increse-size{
+
+.increse-size {
     margin-left: -11px;
     font-size: 3rem;
     display: flex;
 
 }
 
-.foot-panel3{
-    background-color: #040c15;;
+.foot-panel3 {
+    background-color: #040c15;
+    ;
     color: #dddddd;
     border-top: 0.5px solid white;
-    height:68px;
+    height: 68px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.foot-panel4{
-    background-color:#0f1111 ;
+.foot-panel4 {
+    background-color: #0f1111;
     color: white;
     font-size: 0.75rem;
     height: 100px;
     text-align: center;
-    padding-top:25px ;
+    padding-top: 25px;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     padding-top: 8px;
 
