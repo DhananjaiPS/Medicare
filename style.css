@@ -408,8 +408,8 @@ h3 {
 
 .appoinment-wrapper {
     position: relative;
-    width: 50%;
-    height: 440px;
+    width: 400px;
+    height: 550px;
     margin-top: 23px;
     background: transparent;
     border: 2px solid rgba(225, 255, 255, .5);
@@ -418,10 +418,12 @@ h3 {
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     /* overflow: none; */
     transition: height .2s ease;
+    padding: 23px 23px;
 }
 .appoinment-wrapper.active{
     height: 520px;
@@ -449,9 +451,9 @@ h3 {
     cursor: pointer;
     z-index: 1;
 }
-/* .appoinment-wrapper .form-box.login{
+ /* .appoinment-wrapper .form-box.login{ 
     display: none;
-} */
+}  */
 .appoinment-wrapper .form-box.register{
     display: absolute;
     transform: translateX(400px);
@@ -462,11 +464,25 @@ h3 {
     padding: 40px;
 }
 .form-box.login form{
-    width: 100%;
+    width: 341px;
+    height: 310px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 23px;
+    /* background-color: #032da0; */
+    /* font-size: 1.4rem; */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    color: #fff;
+    /* border-top-right-radius: 20px; */
+    /* border-bottom-left-radius: 20px; */
+    cursor: pointer;
+    z-index: 1;
+
 }
 
 .form-box h2 {
@@ -588,5 +604,100 @@ h3 {
 
 .login-register p a:hover {
     text-decoration: underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+    background-color: #134bce;
+    color: white;
+    height:49px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.foot-panel2{
+    display: flex;
+    background-color: #3384da;
+    background: url(footer-bg1.jpg);
+    background-size: cover;
+    backface-visibility: visible;
+    background-position: center;
+    color: rgb(255, 254, 254);
+    height:400px;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+.foot-panel2 ul{
+    margin-top: 28px;
+}
+ul a{
+   
+    display: block;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #0f0f0f;
+}
+.increse-size{
+    margin-left: -11px;
+    font-size: 3rem;
+    display: flex;
+
+}
+
+.foot-panel3{
+    background-color: #040c15;;
+    color: #dddddd;
+    border-top: 0.5px solid white;
+    height:68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foot-panel4{
+    background-color:#0f1111 ;
+    color: white;
+    font-size: 0.75rem;
+    height: 100px;
+    text-align: center;
+    padding-top:25px ;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 8px;
 
 }
