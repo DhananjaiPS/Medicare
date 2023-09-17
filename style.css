@@ -8,11 +8,23 @@
 header {
 
     color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 99;
+    align-items: center;
+    flex-wrap: wrap;
+
+
 }
 
 .navbar {
     background-color: #003ecb;
     color: #F7F3E8;
+    width: 100%;
 }
 
 .contactbar {
@@ -83,8 +95,9 @@ header {
     justify-content: space-evenly;
     align-items: center;
     height: 90px;
-    background-color: antiquewhite;
+    background-color: white;
     border: none;
+    width: 100%;
 }
 
 .panel-logo {
@@ -120,15 +133,43 @@ header {
     color: #003ecb;
 
 }
-.blue-bg{
+
+.blue-bg {
     background-color: #003ecb;
 }
-.panel-menu {
+
+.panel-menu a {
     font-size: 1.4rem;
     font-weight: 599;
     border: none;
+    position: relative;
 
 
+
+}
+
+.blue:hover {
+    color: #000;
+}
+
+.panel-menu a ::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    bottom: -6px;
+    height: 3px;
+    background: #032da0;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+
+}
+
+.panel-menu a:hover::after {
+    transform: scaleX(1);
 }
 
 .panel-search {
@@ -146,7 +187,18 @@ header {
     background-color: #003ecb;
     color: white;
     padding: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
 
+
+}
+
+.btn:hover {
+    border: 2px solid #040db8;
+    background-color: #F7F3E8;
+    color: #0b0b0b;
+    font-weight: 600;
 
 }
 
@@ -198,38 +250,42 @@ h3 {
 .panel2-img {
     /* border: 2px solid black; */
     width: 50%;
-    height:650px;
+    height: 650px;
     /* display: flex; */
     /* justify-content: space-evenly; */
-    background-color:white;
+    background-color: white;
 
 }
-.sub-img-p2{
+
+.sub-img-p2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     /* background-image: url(medi-art1.png); */
     /* background-color: rgb(29, 169, 169); */
-    
+
 }
-.box-img{
+
+.box-img {
     z-index: 1;
 }
 
 .box {
-    
+
     height: 267px;
     width: 250px;
-    border:none;
+    border: none;
     margin: 23px;
     border-radius: 1.2rem;
     z-index: 0;
 }
-.top-box{
+
+.top-box {
     margin-top: 3.2rem;
-    
+
 }
-.lower-box{
+
+.lower-box {
     margin-bottom: 1.2rem;
 }
 
@@ -238,45 +294,47 @@ h3 {
     width: 50%;
     height: 650px;
     background-color: white;
-    
 
 }
-.sub-text-wlcm{
+
+.sub-text-wlcm {
     font-size: 1.3rem;
     margin: 13px 0px;
 
 }
-.sub-text-wlcm i{
+
+.sub-text-wlcm i {
     font-size: 1.5rem;
     margin-left: 23px;
     margin-top: 6px;
 
 }
-.sub-text-title{
+
+.sub-text-title {
     font-size: 40px;
     margin-top: 18px;
     font-weight: 600;
     margin-bottom: 15px;
 
-    
+
 
 }
-.sub-text-options{
-   
-    
 
-}
-.sub-text-options p{
+.sub-text-options {}
+
+.sub-text-options p {
     margin: 26px 0px;
     width: 80%;
 }
-.sub-text-box{
+
+.sub-text-box {
     display: flex;
     flex-wrap: wrap;
-    
+
 
 }
-.text-box{
+
+.text-box {
     width: 45%;
     display: flex;
     /* border: 2px solid blueviolet; */
@@ -284,24 +342,28 @@ h3 {
     margin: 17px 17px;
     /* justify-content: space-evenly; */
 }
-.text-box i{
+
+.text-box i {
     border-radius: 126px;
     border: 4px solid #003ecb;
     padding: 9px 9px;
     margin: 23px;
-    
+
 }
-.text{
+
+.text {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 23px;
     font-weight: 600;
 }
-.text-box text{
+
+.text-box text {
     padding-left: 23px;
-    
+
 }
+
 .sub-text-btn {
     display: flex;
     justify-content: center;
@@ -311,17 +373,220 @@ h3 {
     width: 100%;
 
 }
-.sub-text-btn button{
+
+.sub-text-btn button {
     font-size: 21px;
     background-color: #003ecb;
     color: white;
     border: none;
     padding: 5px 15px;
 }
-.health-dep{
+
+.health-dep {
     height: 680px;
+    
 }
-.PDS-video{
+
+.PDS-video {
     height: 550px;
     background-color: #003ecb;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 0px;
+    height: 600px;
+    background: url(login-bg1.jpg);
+    background-size:cover;
+    width: 100%;
+    background-position: center;
+      
+}
+
+.appoinment-wrapper {
+    position: relative;
+    width: 50%;
+    height: 440px;
+    margin-top: 23px;
+    background: transparent;
+    border: 2px solid rgba(225, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    /* overflow: none; */
+    transition: height .2s ease;
+}
+.appoinment-wrapper.active{
+    height: 520px;
+}
+/* form{
+    width: 378px;
+    right: -234px;
+    text-align: center;
+    position: relative;
+} */
+.appoinment-wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #032da0;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px ;
+    cursor: pointer;
+    z-index: 1;
+}
+/* .appoinment-wrapper .form-box.login{
+    display: none;
+} */
+.appoinment-wrapper .form-box.register{
+    display: absolute;
+    transform: translateX(400px);
+    
+}
+.form-box {
+    width: 100%;
+    padding: 40px;
+}
+.form-box.login form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-box h2 {
+    font-size: 2rem;
+    color: #040db8;
+    text-align: center;
+
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #040db8;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: #032da0;
+    font-weight: 500;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: #040db8;
+    line-height: 57px;
+}
+
+.remember-forget {
+    font-size: .9rem;
+    color: #040db8;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forget label input {
+    accent-color: #040db8;
+    margin: 3px;
+
+
+}
+
+.remember-forget a {
+    color: #040db8;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.btn-2 {
+    width: 50%;
+    height: 45px;
+    background: #040db8;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 3px;
+
+
+}
+
+.head-btn-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.login-register {
+    font-size: .9rem;
+    color: #040db8;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 24px;
+
+}
+
+.login-register p a {
+    color: #040db8;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+
 }
