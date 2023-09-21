@@ -41,7 +41,7 @@
             </div>
 
         </div>
-        <div class="panel">
+        <div class="panel" id="panel-bar">
             <div class="panel-logo">
                 <div><i class="fa-solid fa-heart-pulse fa-beat-fade fa-lg  padd logo"></i></div>
                 <div class="logo-text padd">MedCare</div>
@@ -52,7 +52,7 @@
                         <div class="sub-menu-1">
                             <ul class="sub-home">
                                 <li><a href="#">Introduction</a></li>
-                                <li><a href="#">About MedCare</a></li>
+                                <li><a href="#wlcm-medcar">About MedCare</a></li>
                                 <li><a href="#">Job Careers</a></li>
                                 <li><a href="#">Research</a></li>
                             </ul>
@@ -115,7 +115,7 @@
                 <i class="fa-solid fa-bars padd"></i>
             </div>
             <div class="panel-appoinment">
-                <button class="btn padd" id="Appoinment"><span>Appointment</span></button>
+                <button class="btn padd" id="Appoinment" ><span><a href="#app1" target="app1">Appointment</a></span></button>
             </div>
         </div>
     </header>
@@ -139,7 +139,7 @@
                 <div class="box lower-box blue-bg"></div>
             </div> -->
         </div>
-        <div class="panel2-text blue">
+        <div class="panel2-text blue" id="wlcm-medcar">
             <div class="sub-text-wlcm">
                 <h4 class="blue">WELCOME TO MEDCARE !</h4>
 
@@ -180,6 +180,25 @@
         </div>
 
     </div>
+    <!-- <div class="health-dept">
+        <div class="heading-hdpt">
+            <div class="hdpt-text">
+                <h2>How We Help !</h2>
+                <h4 class="blue health-text">Health Departments !</h4>
+                <div><i class="fa-solid fa-minus blue"><i class="fa-solid fa-heart-pulse blue"></i><i class="fa-solid fa-minus blue"></i>
+                </i></div>
+
+            </div>
+        </div>
+        <div class="box-hdpt">
+            <div class="box-1-hdpt">Neurologist</div>
+            <div class="box-2-hdpt">cardiology</div>
+            <div class="box-3-hdpt">Orthopedic</div>
+            <div class="box-4-hdpt">Eye Care</div>
+            <div class="box-5-hdpt">MIR</div>
+            <div class="box-6-hdpt">Dental Care</div>
+        </div>
+    </div> -->
     <div class="app">
         <div class="appoinment-wrapper" id="appointmentWrapper">
             <span class="icon-close">
@@ -301,7 +320,7 @@
 
         </div>
     </div>
-    <div class="Appointment-panel">
+    <div class="Appointment-panel" id="app1">
         <div class="app-pic">
             <!-- <span><img src="app-pic-2.jpg" ></span> -->
         </div>
@@ -311,7 +330,7 @@
                 <i class="fa-solid fa-minus blue"></i>
                 <i class="fa-solid fa-heart-pulse blue"></i>
                 <i class="fa-solid fa-minus blue"></i>
-                
+
             </div>
             <div class="sub-text-title2">
                 <div class="white">Take Appointment For</div>
@@ -319,10 +338,10 @@
             </div>
             <div class="sub-app-form">
                 <form class="form2">
-                    <input  class="white" type="text" placeholder="Full Name" required>
+                    <input class="white" type="text" placeholder="Full Name" required>
                     <input type="number" placeholder="   Phone*" required>
                     <input type="email " required placeholder="Email">
-                    <select >
+                    <select>
                         <option value="VV!">Diseases</option>
                         <option value="VV!">Fever</option>
                         <option value="VV!">COVID-19</option>
@@ -348,11 +367,11 @@
                     <button type="submit" class="app-btn">Book An Appoinment</button>
                 </form>
             </div>
-            
+
         </div>
     </div>
     <footer>
-        <div class="foot-panel1">Back to Top</div>
+        <div class="foot-panel1"><a href="#panel-bar">Back to Top</a></div>
         <div class="foot-panel2">
             <ul>
                 <!-- <p><i class="fa-solid fa-heart-pulse increse-size"></i></p> -->

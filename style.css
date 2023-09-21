@@ -5,6 +5,7 @@
 
 }
 
+
 header {
 
     color: black;
@@ -150,7 +151,13 @@ header {
 
 
 }
-
+.btn span a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn span a:hover{
+    color: #0b0b0b;
+}
 .panel-menu ul li:hover .sub-menu-1 ul {
     display: flex;
     flex-direction: column;
@@ -978,7 +985,11 @@ footer {
     align-items: center;
     font-size: 0.8rem;
 }
-
+.foot-panel1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
 .foot-panel2 {
     display: flex;
     background-color: #3384da;
