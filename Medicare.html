@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <!-- <div class="preloader" id="preloader">
-        <div id="sub-preloader"></div>
-    </div> -->
+    <div class="preloader" id="preloader" style="display: none;">
+        <div id="sub-preloader" style="display: none;"></div>
+    </div>
     <header>
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="contactbar">
                 <div class="contactnumber">
                     <i class="fa-solid fa-phone fa-shake"></i>
@@ -26,7 +26,8 @@
 
                 </div>
                 <div class="contactEmail">
-                    <i class="fa-solid fa-envelope fa-beat"></i>
+                    <!-- <i class="fa-solid fa-envelope fa-beat"></i> -->
+                    <i class="fa-solid fa-envelope"></i>
                     <a class="padd">Dhananjai@example.com</a>
                 </div>
                 <div class="contactadd">
@@ -39,6 +40,23 @@
                     <a href="www.instagram.com" class="padd"><i class="fa-brands fa-instagram"></i></a>
                     <a href="www.linkdein.com" class="padd"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="www.x.com" class="padd"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="login">
+                    <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+                    <div class="sub-login1">
+
+                        <ul>
+                            <li><i class="fa-solid fa-user-secret"></i><a href="#appointmentWrapper">Admin</a></li>
+                            <li><i class="fa-solid fa-user-doctor"></i><a href="#appointmentWrapper">Doctor </a></li>
+                            <li><i class="fa-solid fa-user-graduate"></i><a href="#appointmentWrapper">Student</a></li>
+                            <li><i class="fa-solid fa-users slim"></i><a href="#appointmentWrapper">Patients</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="store">
+                    <a href="#"><i class="fa-solid fa-store"></i></a>
+
                 </div>
 
             </div>
@@ -115,7 +133,7 @@
             </div>
             <div class="panel-search">
                 <i class="fa-solid fa-magnifying-glass  padd"></i>
-                <i class="fa-solid fa-bars padd"></i>
+                <i class="fa-solid fa-bars padd" onclick="bars()"></i>
             </div>
             <div class="panel-appoinment">
                 <button class="btn padd" id="Appoinment"><span><a href="#app1"
@@ -135,13 +153,7 @@
     </div>
     <div class="panel2">
         <div class="panel2-img">
-            <!-- <div class="sub-img-p2">
 
-                <div class="box top-box blue-bg"></div>
-                <div class="box top-box"></div>
-                <div class="box lower-box"></div>
-                <div class="box lower-box blue-bg"></div>
-            </div> -->
         </div>
         <div class="panel2-text blue" id="wlcm-medcar">
             <div class="sub-text-wlcm">
@@ -166,7 +178,8 @@
                     </div>
                     <div class="text-box">
                         <i class="fa-solid fa-user-doctor"></i>
-                        <div class="text">Qualified doctors</div>
+                        <div class="text"><a href="#health-dep" style="text-decoration: none;">Qualified doctors</a>
+                        </div>
                     </div>
                     <div class="text-box">
                         <i class="fa-solid fa-stethoscope"></i>
@@ -189,57 +202,90 @@
             <div class="hdpt-text">
                 <h2>How We Help !</h2>
                 <h4 class="blue health-text">Health Departments !</h4>
-                <div><i class="fa-solid fa-minus blue"><i class="fa-solid fa-heart-pulse blue"></i><i
-                            class="fa-solid fa-minus blue"></i>
-                    </i></div>
-
+                <div>
+                    <i class="fa-solid fa-heart-pulse blue hdpt-icon"></i>
+                </div>
             </div>
         </div>
         <div class="box-hdpt">
             <div class="box-1-hdpt">
-                <i class="fa-solid fa-brain"></i>
-                <div>Neurologist</div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
+                <i class="fa-solid fa-brain  hdpt-icon"></i>
+                <div class="hdpt-text">Neurologist</div>
+                <div class="hdpt-para">
+                    <p>Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laudantium maxime
+                        quidem. ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
                 </div>
-                <div><button>Read More</button></div>
+                <div class="hdpt-btn">
+                    <button>Read More</button>
+
+                </div>
+
             </div>
             <div class="box-2-hdpt">
-                <div>cardiology</div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
+                <i class="fa-solid fa-shield-heart hdpt-icon"></i>
+                <div class="hdpt-text">Cardiology</div>
+                <div class="hdpt-para">
+                    <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur recusandae
+                        dignissimos!ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
                 </div>
-                <div><button>Read More</button></div>
+                <div class="hdpt-btn"><button>Read More</button></div>
             </div>
             <div class="box-3-hdpt">
-                <div>Orthopedic</div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
+                <i class="fa-solid fa-mortar-pestle hdpt-icon"></i>
+
+                <div class="hdpt-text">Orthopedic</div>
+                <div class="hdpt-para">
+                    <p>Lorem ipsu Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet nulla laborum.m,
+                        dolor sit amet connt numquam, minima ipsam qui?</p>
                 </div>
-                <div><button>Read More</button></div>
+                <div class="hdpt-btn"><button>Read More</button></div>
             </div>
             <div class="box-4-hdpt">
-                <div>Eye Care</div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
+                <i class="fa-solid fa-eye hdpt-icon"></i>
+                <div class="hdpt-text">Eye Care</div>
+                <div class="hdpt-para">
+                    <p>Lorem ipsum, dolor si Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                        similique ad? In?t amet connt numquam, minima ipsam qui?</p>
                 </div>
-                <div><button>Read More</button></div>
+                <div class="hdpt-btn"><button>Read More</button></div>
             </div>
-            <div class="box-5-hdpt">
-                <div>MIR</div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
+            <div class="box-5-hdpt ">
+                <i class="fa-solid fa-book-medical hdpt-icon"></i>
+                <div class="hdpt-text">MIR</div>
+                <div class="hdpt-para">
+                    <p>Lorem ipsum, dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, consequuntur
+                        suscipit. Fugiat.sit amet connt numquam, minima ipsam qui?</p>
                 </div>
-                <div><button>Read More</button></div>
+                <div class="hdpt-btn"><button>Read More</button></div>
             </div>
             <div class="box-6-hdpt">
-                <div>Dental Care</div>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet connt numquam, minima ipsam qui?</p>
+                <i class="fa-solid fa-tooth hdpt-icon"></i>
+                <div class="hdpt-text">Dental Care</div>
+                <div class="hdpt-para">
+                    <p>Lorem ipsum, dolor sit a Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                        similique commodi ea. met connt numquam, minima ipsam qui?</p>
                 </div>
-                <div><button>Read More</button></div>
+                <div class="hdpt-btn"><button>Read More</button></div>
             </div>
         </div>
+    </div>
+    <div class="video-panel">
+        <div class="directToStore">
+            <div class="l">
+                <h1>#TensionMatLo</h1>
+                <h3>Aj hi Blood Test Kro</h3>
+
+            </div>
+            <div class="l">
+
+            </div>
+            <div class="l">
+
+            </div>
+            
+
+        </div>
+
     </div>
     <div class="app">
         <div class="appoinment-wrapper" id="appointmentWrapper">
@@ -315,7 +361,7 @@
     </div>
 
 
-    <div class="health-dep">
+    <div class="health-dep" id="health-dep">
         <div class="sub-doc">
             <h4 class="blue health-text">Professional Team !</h4>
 
@@ -362,45 +408,8 @@
 
         </div>
     </div>
-    <div style="display: none;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
-            frameborder="0"
+    <!-- <div style="display: none;">
+        
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe><iframe width="560" height="315"
             src="https://www.youtube.com/embed/4E9dKkqtUwk?si=B5Ij6h9diT4YIYGE" title="YouTube video player"
@@ -444,7 +453,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
 
-    </div>
+    </div> -->
     <div class="Appointment-panel" id="app1">
         <div class="app-pic">
             <!-- <span><img src="app-pic-2.jpg" ></span> -->
@@ -496,7 +505,7 @@
         </div>
     </div>
     <footer>
-        <div class="foot-panel1"><a href="#panel-bar">Back to Top</a></div>
+        <div class="foot-panel1"><a href="#navbar">Back to Top</a></div>
         <div class="foot-panel2">
             <ul>
                 <!-- <p><i class="fa-solid fa-heart-pulse increse-size"></i></p> -->
