@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
 }
 
 .navbar {
@@ -153,5 +153,82 @@ h3 {
 #discount .box {
     border: 2px solid rgb(47, 162, 162);
     /* background-color: rgb(47, 162, 162); */
-    color: rgb(47, 162, 162);
+    color: #2fa2a2;
+    height: 90vh;
+}
+#discount .box center p{
+    color: #1d5555;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+#discount .box h4{
+    color: #1d5555;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: #269bad;
+    border-radius: 100%;
+    padding: 12px;position: relative;
+    top: 12px;
+    left: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+.img{
+    height: 35vh;
+}
+.img img{
+    position: relative;
+    top: -61px;
+    z-index: -32;
+}
+del{
+    font-size: 0.7rem;
+}
+.text{
+    height: 20vh;
+    position: relative;
+    top: 35px;
+}
+.text center p{
+    position: relative;
+    top: 23px;
+}
+.upper{
+    position: relative;
+    top: -11px;
+}
+.black{
+    color: #0b0b0b;
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+}
+.btn{
+    display: flex;
+    background-color: #269bad;
+    height: 5vh;
+    width: 12vw;
+    position: relative;
+    top: -19px;
+    left: 27%;
+    
+}
+.btn i{
+    font-size: 1.3rem;
+    position: relative;
+    top: 8px;
+    padding: 0 10px;
+}
+.btn p{
+    font-size: 1rem;
+    padding: 2px 6px;
+    position: relative;
+    top: -10px;
+
 }
