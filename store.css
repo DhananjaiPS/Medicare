@@ -36,6 +36,7 @@ body {
     display: flex;
     border: none;
     justify-content: space-evenly;
+    box-shadow: 10px,10px,blur,black;
 }
 
 .container1 {
@@ -151,11 +152,24 @@ h3 {
 }
 
 #discount .box {
-    border: 2px solid rgb(47, 162, 162);
+    /* border: 2px solid rgb(47, 162, 162); */
     /* background-color: rgb(47, 162, 162); */
     color: #2fa2a2;
     height: 90vh;
+    width: 100%;
+    
+    position: relative;
 }
+#discount .box:hover{
+    border: 2px solid rgb(47, 162, 162);
+    border-radius: 23px;
+    box-shadow: 10px 10px blanchedalmond ;
+    padding: 0 30px;
+    
+
+
+} 
+
 #discount .box center p{
     color: #1d5555;
     font-weight: bold;
