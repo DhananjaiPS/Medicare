@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(17, 20, 184);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: right;
+    list-style: none;
+    margin: 30px 20px;
+}
+
+.navbar li a {
+    padding: 30px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+.navbar div {
+    margin: 20px 10px;
+}
+
+.container {
+    display: flex;
+    border: none;
+    justify-content: space-evenly;
+}
+
+.container1 {
+    color: #033B4C;
+    font-size: 40px;
+    font-family: "Fraunces", Sans-serif;
+}
+
+.containerr {
+    font-size: 40px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-evenly;
+    border-color: black;
+}
+
+#discount {
+    margin: 34px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#discount .box {
+    border: none;
+}
+
+#discount .box img {
+    height: 350px;
+    margin: auto;
+    display: block;
+}
+
+.btn {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    border: none;
+}
+
+#discount .btn img {
+    height: 25px;
+}
+
+#itemo {
+    display: flex;
+}
+
+#itemo .container2 {
+    border: none;
+    height: 250px;
+}
+
+#itemo .container2 img {
+    margin: auto;
+    display: block;
+}
+
+.hero-section {
+    background-image: url();
+    background-color: #003ecb;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-position: left;
+    background-repeat: no-repeat;
+
+
+}
+
+h3 {
+    font-size: 2.8rem;
+    margin-bottom: 33px;
+    font-weight: 700;
+
+
+}
+
+.sub-hero-section {
+    margin-top: 13px;
+    font-size: 1.6rem;
+    color: #0b0b0b;
+    font-weight: 700;
+    padding: 12px 131px;
+}
+
+.hero-btn {
+    margin-top: 63px;
+    color: #222732;
+    border: none;
+    font-size: 22px;
+    padding: 16px 38px;
+    border-radius: 34px;
+}
+
+.panel3 a img {
+    /* background: url(hotbuy.jpg); */
+    height: 25vh;
+    width: 90vw;
+    background-position: center;
+    position: relative;
+    left: 4.5vw;
+    top: 5vw;
+
+
+
+}
+
+#discount .box {
+    border: 2px solid rgb(47, 162, 162);
+    /* background-color: rgb(47, 162, 162); */
+    color: rgb(47, 162, 162);
+}
