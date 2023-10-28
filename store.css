@@ -392,6 +392,7 @@ del{
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
+    position: sticky;
 
 
 }
@@ -408,7 +409,7 @@ del{
 }
 .subbox2:hover .hover{
 
-    z-index: 50;
+    z-index: 150;
     position: relative;
     top: 90px;
     
@@ -416,6 +417,7 @@ del{
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    
 
 }
 .hover{
