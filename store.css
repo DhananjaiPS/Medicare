@@ -64,6 +64,7 @@ body {
     background-position: center;
     background-size: cover;
 }
+
 .navbar {
     background-color: rgb(31, 152, 189);
     border-radius: 12px;
@@ -463,5 +464,116 @@ del{
     border-radius: 23px;
     border:none ;
    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color: #1eb2c0;
+    color: white;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.foot-panel1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.foot-panel2 {
+    display: flex;
+    background-color: #1bb0c7;
+    /* background: url(lab1.jpg); */
+    background-color: #000000;
+    background-size: cover;
+    backface-visibility: visible;
+    background-position: center;
+    color: rgb(255, 254, 254);
+    height: 400px;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.foot-panel2 ul {
+    margin-top: 28px;
+}
+
+ul a {
+
+    display: block;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #6e6666;
+}
+
+.increse-size {
+    margin-left: -11px;
+    font-size: 3rem;
+    display: flex;
+
+}
+
+.foot-panel3 {
+    background-color: #171718;
+    ;
+    color: #dddddd;
+    border-top: 0.5px solid white;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    font-size: 0.75rem;
+    height: 100px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 8px;
 
 }
