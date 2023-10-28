@@ -143,9 +143,10 @@ h3 {
     height: 25vh;
     width: 90vw;
     background-position: center;
-    position: relative;
+    /* position: relative;
     left: 4.5vw;
-    top: 5vw;
+    top: 5vw; */
+    margin-left: 47px;
 
 
 
@@ -244,5 +245,23 @@ del{
     padding: 2px 6px;
     position: relative;
     top: -10px;
+
+}
+.panel4{
+    min-height: 100vh;
+    width: 100vw;
+    border:2px solid black ;
+}
+.panel4 a img {
+    /* background: url(hotbuy.jpg); */
+    height: 25vh;
+    width: 90vw;
+    background-position: center;
+    /* position: relative;
+    left: 4.5vw;
+    top: 5vw; */
+    margin-left: 47px;
+
+
 
 }
